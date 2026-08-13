@@ -7,7 +7,7 @@ if (!true)// when given negotiation operator(!)
     console.log("condition is satisfied")
 }
 else{
-    console.log("condition is not satisfied")
+    console.log("print condition is not satisfied")
 }
 
 //FOR LOOP IS USED WHEN YOU KNOW EXACTLY HOW MANYTIMES THE LOOP ITERATE
