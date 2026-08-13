@@ -1,4 +1,6 @@
 console.log("Hello World") // console.log() method is used to print somthing in javascript
+console.log("Hello World2") // console.log() method is used to print somthing in javascript
+
 
 //Declaring variables
 //let, var, const are the used to declare variables 
