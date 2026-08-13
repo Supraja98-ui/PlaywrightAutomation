@@ -1,0 +1,1644 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: VerifyRadio.spec.ts >> Verify Radio Button status
+- Location: tests/VerifyRadio.spec.ts:2:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.check: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for getByLabel('Huey')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - list:
+    - listitem:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]:
+        - /url: "#content"
+    - listitem:
+      - link "Skip to search" [ref=e3] [cursor=pointer]:
+        - /url: "#search"
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - link "MongoDB MongoDB Atlas empowers you to build modern apps where you want, how you want, at the speed you want. Try it now. Start Building" [ref=e9] [cursor=pointer]:
+        - /url: /pong/click?code=aHR0cHM6Ly9zcnYuYnV5c2VsbGFkcy5jb20vYWRzL2NsaWNrL3gvR1RORDQyN1lDRUFENEtKTEZUNzRZS1FVRlRCSVZLSk5DWTdJVFozSkNBQURQS0o3Q0tCRFYySktDNlNJQ0s3V0M2N0RQS0pNQ0VCRDUyN1VDS1NENDUzRUhFWUk1NTNXRlRTRDZLM0VDVE5DWUJaNTJL.x2yj%2BNhc%2BzPGYua4y%2Femq%2FiaPbbUWZzBIUGlvKJwiSU%3D&version=2
+        - generic [ref=e10]:
+          - img "MongoDB" [ref=e11]
+          - generic [ref=e12]: MongoDB Atlas empowers you to build modern apps where you want, how you want, at the speed you want. Try it now.
+        - generic [ref=e13]: Start Building
+      - link "Ad" [ref=e15] [cursor=pointer]:
+        - /url: /en-US/advertising
+    - link "Don't want to see ads?" [ref=e17] [cursor=pointer]:
+      - /url: /en-US/plus?ref=nope
+  - banner [ref=e18]:
+    - navigation [ref=e19]:
+      - link "MDN" [ref=e21] [cursor=pointer]:
+        - /url: /en-US/
+        - img "MDN" [ref=e22]
+      - generic [ref=e26]:
+        - navigation [ref=e28]:
+          - button "HTML" [ref=e31] [cursor=pointer]:
+            - generic [ref=e32]: HTML
+          - button "CSS" [ref=e35] [cursor=pointer]:
+            - generic [ref=e36]: CSS
+          - button "JavaScript" [ref=e39] [cursor=pointer]:
+            - generic [ref=e40]: JavaScript
+          - button "Web APIs" [ref=e43] [cursor=pointer]:
+            - generic [ref=e44]: Web APIs
+          - button "All" [ref=e47] [cursor=pointer]:
+            - generic [ref=e48]: All
+          - generic [ref=e50]:
+            - button "Learn" [ref=e51] [cursor=pointer]:
+              - generic [ref=e52]: Learn
+            - text: (external)
+          - button "Tools" [ref=e55] [cursor=pointer]:
+            - generic [ref=e56]: Tools
+          - generic [ref=e58]:
+            - button "About" [ref=e59] [cursor=pointer]:
+              - generic [ref=e60]: About
+            - text: (external)
+          - link "Blog" [ref=e62] [cursor=pointer]:
+            - /url: /en-US/blog/
+        - button "Search the site" [ref=e65] [cursor=pointer]:
+          - img [ref=e66]
+        - link "Log in" [ref=e71] [cursor=pointer]:
+          - /url: https://developer.mozilla.org/users/fxa/login/authenticate/?next=%2Fen-US%2Fdocs%2FWeb%2FHTML%2FReference%2FElements%2Finput%2Fradio
+          - img [ref=e73]
+          - generic [ref=e75]:
+            - generic: Log in
+    - generic [ref=e76]:
+      - list [ref=e77]:
+        - listitem [ref=e78]:
+          - link "Web" [ref=e79] [cursor=pointer]:
+            - /url: /en-US/docs/Web
+        - listitem [ref=e80]:
+          - link "HTML" [ref=e81] [cursor=pointer]:
+            - /url: /en-US/docs/Web/HTML
+        - listitem [ref=e82]:
+          - link "Reference" [ref=e83] [cursor=pointer]:
+            - /url: /en-US/docs/Web/HTML/Reference
+        - listitem [ref=e84]:
+          - link "Elements" [ref=e85] [cursor=pointer]:
+            - /url: /en-US/docs/Web/HTML/Reference/Elements
+        - listitem [ref=e86]:
+          - link "<input>" [ref=e87] [cursor=pointer]:
+            - /url: /en-US/docs/Web/HTML/Reference/Elements/input
+        - listitem [ref=e88]:
+          - link "<input type=\"radio\">" [ref=e89] [cursor=pointer]:
+            - /url: /en-US/docs/Web/HTML/Reference/Elements/input/radio
+      - button "Switch color theme" [ref=e93] [cursor=pointer]:
+        - generic [ref=e94]: Theme
+      - generic [ref=e97]:
+        - button "English (US)" [ref=e98] [cursor=pointer]:
+          - generic [ref=e99]: English (US)
+        - generic: Remember language
+  - generic [ref=e101]:
+    - main [ref=e102]:
+      - generic [ref=e103]:
+        - heading "<input type=\"radio\"> HTML attribute value" [level=1] [ref=e104]:
+          - code [ref=e105]: <input type="radio">
+          - text: HTML attribute value
+        - group [ref=e106]:
+          - generic "Baseline Check Baseline Widely available Chrome check Edge check Firefox check Safari check" [ref=e107] [cursor=pointer]:
+            - img "Baseline Check" [ref=e108]
+            - generic [ref=e109]: Baseline Widely available
+            - generic [ref=e110]:
+              - generic "Supported in Chrome and Edge" [ref=e111]:
+                - img "Chrome check" [ref=e112]
+                - img "Edge check" [ref=e113]
+              - generic "Supported in Firefox" [ref=e114]:
+                - img "Firefox check" [ref=e115]
+              - generic "Supported in Safari" [ref=e116]:
+                - img "Safari check" [ref=e117]
+        - generic [ref=e119]:
+          - paragraph [ref=e120]:
+            - link "<input>" [ref=e121] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/Reference/Elements/input
+              - code [ref=e122]: <input>
+            - text: elements of type
+            - strong [ref=e123]:
+              - code [ref=e124]: radio
+            - text: are generally used in
+            - strong [ref=e125]: radio groups
+            - text: —collections of radio buttons describing a set of related options.
+          - paragraph [ref=e126]: Only one radio button in a given group can be selected at the same time. Radio buttons are typically rendered as small circles, which are filled or highlighted when selected.
+      - complementary [ref=e127]:
+        - navigation [ref=e128]:
+          - heading "In this article" [level=2] [ref=e129]
+          - list [ref=e130]:
+            - listitem [ref=e131]:
+              - link "Try it" [ref=e132] [cursor=pointer]:
+                - /url: "#try_it"
+            - listitem [ref=e133]:
+              - link "Value" [ref=e134] [cursor=pointer]:
+                - /url: "#value"
+            - listitem [ref=e135]:
+              - link "Additional attributes" [ref=e136] [cursor=pointer]:
+                - /url: "#additional_attributes"
+            - listitem [ref=e137]:
+              - link "Using radio inputs" [ref=e138] [cursor=pointer]:
+                - /url: "#using_radio_inputs"
+            - listitem [ref=e139]:
+              - link "Validation" [ref=e140] [cursor=pointer]:
+                - /url: "#validation"
+            - listitem [ref=e141]:
+              - link "Styling radio inputs" [ref=e142] [cursor=pointer]:
+                - /url: "#styling_radio_inputs"
+            - listitem [ref=e143]:
+              - link "Technical summary" [ref=e144] [cursor=pointer]:
+                - /url: "#technical_summary"
+            - listitem [ref=e145]:
+              - link "Specifications" [ref=e146] [cursor=pointer]:
+                - /url: "#specifications"
+            - listitem [ref=e147]:
+              - link "Browser compatibility" [ref=e148] [cursor=pointer]:
+                - /url: "#browser_compatibility"
+            - listitem [ref=e149]:
+              - link "See also" [ref=e150] [cursor=pointer]:
+                - /url: "#see_also"
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - link "ImageKit.io Image & Video API Real-time URL transforms, global CDN delivery & easy integration with existing storage. Start Free" [ref=e154] [cursor=pointer]:
+              - /url: /pong/click?code=aHR0cHM6Ly9zcnYuYnV5c2VsbGFkcy5jb20vYWRzL2NsaWNrL3gvR1RORDQyN1lDRUFENEtKTEZUWUxZS1FVRlRCSVZLSjdDSzdETFozSkNBQURQS0pVQ1RCRFRLN0tDS0FERTJRTkM2QklFMlFNQ1RZRDZLM0xDQTdJQzUzS0M2U0lFMjNZQ1k3RFRLM0VISk5DTFNJWg%3D%3D.Ziu20aN47Y13wV16FJFkyabiZZR7pyuPSuj3ThTCgSg%3D&version=2
+              - img "ImageKit.io" [ref=e155]
+              - generic [ref=e156]:
+                - strong [ref=e157]: Image & Video API
+                - generic [ref=e158]: Real-time URL transforms, global CDN delivery & easy integration with existing storage.
+                - generic [ref=e159]: Start Free
+            - link "Ad" [ref=e161] [cursor=pointer]:
+              - /url: /en-US/advertising
+          - link "Don't want to see ads?" [ref=e163] [cursor=pointer]:
+            - /url: /en-US/plus?ref=nope
+      - generic [ref=e164]:
+        - region "Try it" [ref=e165]:
+          - heading "Try it" [level=2] [ref=e166]:
+            - link "Try it" [ref=e167] [cursor=pointer]:
+              - /url: "#try_it"
+          - 'generic "HTML Demo: <input type=\"radio\">" [ref=e170]':
+            - generic [ref=e171]:
+              - 'heading "HTML Demo: <input type=\"radio\">" [level=4] [ref=e172]'
+              - button "Reset" [ref=e174] [cursor=pointer]:
+                - generic [ref=e175]:
+                  - generic: Reset
+            - generic [ref=e176]:
+              - tablist [ref=e177]:
+                - generic:
+                  - tab "HTML" [selected] [ref=e178] [cursor=pointer]:
+                    - generic: HTML
+                  - tab "CSS" [ref=e179] [cursor=pointer]:
+                    - generic: CSS
+              - tabpanel "HTML" [ref=e180]:
+                - generic [ref=e184]:
+                  - generic [ref=e186]:
+                    - generic [ref=e187]: "1"
+                    - generic [ref=e188]: "2"
+                    - generic [ref=e189]: "3"
+                    - generic [ref=e190]: "4"
+                    - generic [ref=e191]: "5"
+                    - generic [ref=e192]: "6"
+                    - generic [ref=e193]: "7"
+                    - generic [ref=e194]: "8"
+                    - generic [ref=e195]: "9"
+                    - generic [ref=e196]: "10"
+                    - generic [ref=e197]: "11"
+                    - generic [ref=e198]: "12"
+                    - generic [ref=e199]: "13"
+                    - generic [ref=e200]: "14"
+                    - generic [ref=e201]: "15"
+                    - generic [ref=e202]: "16"
+                    - generic [ref=e203]: "17"
+                    - generic [ref=e204]: "18"
+                    - generic [ref=e205]: "19"
+                  - textbox [ref=e206]:
+                    - generic [ref=e207]: <fieldset>
+                    - generic [ref=e208]: <legend>Select a maintenance drone:</legend>
+                    - generic [ref=e210]: <div>
+                    - generic [ref=e211]: <input type="radio" id="huey" name="drone" value="huey" checked />
+                    - generic [ref=e212]: <label for="huey">Huey</label>
+                    - generic [ref=e213]: </div>
+                    - generic [ref=e215]: <div>
+                    - generic [ref=e216]: <input type="radio" id="dewey" name="drone" value="dewey" />
+                    - generic [ref=e217]: <label for="dewey">Dewey</label>
+                    - generic [ref=e218]: </div>
+                    - generic [ref=e220]: <div>
+                    - generic [ref=e221]: <input type="radio" id="louie" name="drone" value="louie" />
+                    - generic [ref=e222]: <label for="louie">Louie</label>
+                    - generic [ref=e223]: </div>
+                    - generic [ref=e224]: </fieldset>
+            - generic [ref=e226]:
+              - heading "Output" [level=4] [ref=e227]
+              - iframe [ref=e229]:
+                - group "Select a maintenance drone:" [ref=f10e2]:
+                  - generic [ref=f10e3]: "Select a maintenance drone:"
+                  - generic [ref=f10e4]:
+                    - radio "Huey" [checked] [ref=f10e5]
+                    - text: Huey
+                  - generic [ref=f10e6]:
+                    - radio "Dewey" [ref=f10e7]
+                    - text: Dewey
+                  - generic [ref=f10e8]:
+                    - radio "Louie" [ref=f10e9]
+                    - text: Louie
+          - paragraph [ref=e230]: They are called radio buttons because they look and operate in a similar manner to the push buttons on old-fashioned radios, such as the one shown below.
+          - paragraph [ref=e231]:
+            - img "Shows what radio buttons looked like in the olden days." [ref=e232]
+          - paragraph [ref=e234]:
+            - strong [ref=e235]: "Note:"
+            - link "Checkboxes" [ref=e236] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/Reference/Elements/input/checkbox
+            - text: "are similar to radio buttons, but with an important distinction: radio buttons are designed for selecting one value out of a set, whereas checkboxes let you turn individual values on and off. Where multiple controls exist, radio buttons allow one to be selected out of them all, whereas checkboxes allow multiple values to be selected."
+        - region "Value" [ref=e237]:
+          - heading "Value" [level=2] [ref=e238]:
+            - link "Value" [ref=e239] [cursor=pointer]:
+              - /url: "#value"
+          - paragraph [ref=e240]:
+            - text: The
+            - code [ref=e241]: value
+            - text: attribute is a string containing the radio button's value. The value is never shown to the user by their
+            - link "user agent" [ref=e242] [cursor=pointer]:
+              - /url: /en-US/docs/Glossary/User_agent
+            - text: . Instead, it's used to identify which radio button in a group is selected.
+        - region "Defining a radio group" [ref=e243]:
+          - heading "Defining a radio group" [level=3] [ref=e244]:
+            - link "Defining a radio group" [ref=e245] [cursor=pointer]:
+              - /url: "#defining_a_radio_group"
+          - paragraph [ref=e246]:
+            - text: A radio group is defined by giving each of radio buttons in the group the same
+            - link "name" [ref=e247] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/Reference/Elements/input#name
+              - code [ref=e248]: name
+            - text: . Once a radio group is established, selecting any radio button in that group automatically deselects any currently-selected radio button in the same group.
+          - paragraph [ref=e249]:
+            - text: You can have as many radio groups on a page as you like, as long as each has its own unique
+            - code [ref=e250]: name
+            - text: .
+          - paragraph [ref=e251]:
+            - text: For example, if your form needs to ask the user for their preferred contact method, you might create three radio buttons, each with the
+            - code [ref=e252]: name
+            - text: property set to
+            - code [ref=e253]: contact
+            - text: but one with the value
+            - code [ref=e254]: email
+            - text: ", one with the value"
+            - code [ref=e255]: phone
+            - text: ", and one with the value"
+            - code [ref=e256]: mail
+            - text: . The user never sees the
+            - code [ref=e257]: value
+            - text: or the
+            - code [ref=e258]: name
+            - text: (unless you expressly add code to display it).
+          - paragraph [ref=e259]: "The resulting HTML looks like this:"
+          - generic [ref=e261]:
+            - generic [ref=e262]:
+              - generic [ref=e263]: html
+              - button "Copy" [ref=e266] [cursor=pointer]:
+                - generic [ref=e267]:
+                  - generic: Copy
+              - generic "Run example in MDN Playground (opens in new tab)" [ref=e268]:
+                - link "Play" [ref=e269] [cursor=pointer]:
+                  - /url: https://developer.mozilla.org/en-US/play?uuid=7ad458dfa6397d4c0abe6ebc660d885a512b2336&state=nZJNa8MwDIb%2FitC5YNbeguvL2HFQ2NUXJ1ZqD38EWymUsf8%2Bknl0ZaOsO%2BnDr18eJL2h4xiwQznmEpVOAHL0FGwlXisAGehIyapDIFMJKgUaGM55LjAVGqkUsjDkxGZgiMQu206K9qlZWH9qKYD0aZoZ%2BDzRXmMx1meN4O1eY3N5dNkP9KARkol06WuEkwnz0qFofNAI4mIbTE8Bxlx%2BMVJPi16KVaN0updle4tlcjnRH1m2GtVh0f%2BfZXeL5Y6x7DSq56uprHpx2dX12vqZOacvvjr30bNG9bImUnw%2B%2F3CR4ts5SdGuDDc41Iod4gZfW2RHkbDD4I%2BO8f0D&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FHTML%2FReference%2FElements%2Finput%2Fradio%2F
+                  - generic [ref=e270]:
+                    - generic: Play
+            - code [ref=e272]:
+              - generic [ref=e273]:
+                - generic [ref=e274]: <form
+                - text: ">"
+              - generic [ref=e275]:
+                - generic [ref=e276]: <fieldset
+                - text: ">"
+              - generic [ref=e277]:
+                - generic [ref=e278]: <legend
+                - text: ">"
+              - text: "Please select your preferred contact method:"
+              - generic [ref=e279]:
+                - generic [ref=e280]: </legend
+                - text: ">"
+              - generic [ref=e281]:
+                - generic [ref=e282]: <div
+                - text: ">"
+              - generic [ref=e283]:
+                - generic [ref=e284]: <input
+                - text: type
+                - generic [ref=e285]: ="radio"
+                - text: id
+                - generic [ref=e286]: ="contactChoice1"
+                - text: name
+                - generic [ref=e287]: ="contact"
+                - text: value
+                - generic [ref=e288]: ="email"
+                - text: />
+              - generic [ref=e289]:
+                - generic [ref=e290]: <label
+                - text: for
+                - generic [ref=e291]: ="contactChoice1"
+                - text: ">"
+              - text: Email
+              - generic [ref=e292]:
+                - generic [ref=e293]: </label
+                - text: ">"
+              - generic [ref=e294]:
+                - generic [ref=e295]: <input
+                - text: type
+                - generic [ref=e296]: ="radio"
+                - text: id
+                - generic [ref=e297]: ="contactChoice2"
+                - text: name
+                - generic [ref=e298]: ="contact"
+                - text: value
+                - generic [ref=e299]: ="phone"
+                - text: />
+              - generic [ref=e300]:
+                - generic [ref=e301]: <label
+                - text: for
+                - generic [ref=e302]: ="contactChoice2"
+                - text: ">"
+              - text: Phone
+              - generic [ref=e303]:
+                - generic [ref=e304]: </label
+                - text: ">"
+              - generic [ref=e305]:
+                - generic [ref=e306]: <input
+                - text: type
+                - generic [ref=e307]: ="radio"
+                - text: id
+                - generic [ref=e308]: ="contactChoice3"
+                - text: name
+                - generic [ref=e309]: ="contact"
+                - text: value
+                - generic [ref=e310]: ="mail"
+                - text: />
+              - generic [ref=e311]:
+                - generic [ref=e312]: <label
+                - text: for
+                - generic [ref=e313]: ="contactChoice3"
+                - text: ">"
+              - text: Mail
+              - generic [ref=e314]:
+                - generic [ref=e315]: </label
+                - text: ">"
+              - generic [ref=e316]:
+                - generic [ref=e317]: </div
+                - text: ">"
+              - generic [ref=e318]:
+                - generic [ref=e319]: <div
+                - text: ">"
+              - generic [ref=e320]:
+                - generic [ref=e321]: <button
+                - text: type
+                - generic [ref=e322]: ="submit"
+                - text: ">"
+              - text: Submit
+              - generic [ref=e323]:
+                - generic [ref=e324]: </button
+                - text: ">"
+              - generic [ref=e325]:
+                - generic [ref=e326]: </div
+                - text: ">"
+              - generic [ref=e327]:
+                - generic [ref=e328]: </fieldset
+                - text: ">"
+              - generic [ref=e329]:
+                - generic [ref=e330]: </form
+                - text: ">"
+          - paragraph [ref=e331]:
+            - text: Here you see the three radio buttons, each with the
+            - code [ref=e332]: name
+            - text: set to
+            - code [ref=e333]: contact
+            - text: and each with a unique
+            - code [ref=e334]: value
+            - text: that uniquely identifies that individual radio button within the group. They each also have a unique
+            - link "id" [ref=e335] [cursor=pointer]:
+              - /url: /en-US/docs/Web/API/Element/id
+              - code [ref=e336]: id
+            - text: ", which is used by the"
+            - link "<label>" [ref=e337] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/Reference/Elements/label
+              - code [ref=e338]: <label>
+            - text: element's
+            - link "for" [ref=e339] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/Reference/Elements/label#for
+              - code [ref=e340]: for
+            - text: attribute to associate the labels with the radio buttons.
+          - paragraph [ref=e341]: "You can try out this example here:"
+          - generic [ref=e343]:
+            - generic "Run example in MDN Playground (opens in new tab)" [ref=e345]:
+              - link "Play" [ref=e346] [cursor=pointer]:
+                - /url: https://developer.mozilla.org/en-US/play?uuid=7ad458dfa6397d4c0abe6ebc660d885a512b2336&state=nZJNa8MwDIb%2FitC5YNbeguvL2HFQ2NUXJ1ZqD38EWymUsf8%2Bknl0ZaOsO%2BnDr18eJL2h4xiwQznmEpVOAHL0FGwlXisAGehIyapDIFMJKgUaGM55LjAVGqkUsjDkxGZgiMQu206K9qlZWH9qKYD0aZoZ%2BDzRXmMx1meN4O1eY3N5dNkP9KARkol06WuEkwnz0qFofNAI4mIbTE8Bxlx%2BMVJPi16KVaN0updle4tlcjnRH1m2GtVh0f%2BfZXeL5Y6x7DSq56uprHpx2dX12vqZOacvvjr30bNG9bImUnw%2B%2F3CR4ts5SdGuDDc41Iod4gZfW2RHkbDD4I%2BO8f0D&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FHTML%2FReference%2FElements%2Finput%2Fradio%2F
+                - generic [ref=e347]:
+                  - generic: Play
+            - iframe [ref=e349]:
+              - group "Please select your preferred contact method:" [ref=f11e3]:
+                - generic [ref=f11e4]: "Please select your preferred contact method:"
+                - generic [ref=f11e5]:
+                  - radio "Email" [ref=f11e6]
+                  - text: Email
+                  - radio "Phone" [ref=f11e7]
+                  - text: Phone
+                  - radio "Mail" [ref=f11e8]
+                  - text: Mail
+                - button "Submit" [ref=f11e10]
+        - region "Data representation of a radio group" [ref=e350]:
+          - heading "Data representation of a radio group" [level=3] [ref=e351]:
+            - link "Data representation of a radio group" [ref=e352] [cursor=pointer]:
+              - /url: "#data_representation_of_a_radio_group"
+          - paragraph [ref=e353]:
+            - text: When the above form is submitted with a radio button selected, the form's data includes an entry in the form
+            - code [ref=e354]: contact=value
+            - text: . For example, if the user clicks on the "Phone" radio button then submits the form, the form's data will include the line
+            - code [ref=e355]: contact=phone
+            - text: .
+          - paragraph [ref=e356]:
+            - text: If you omit the
+            - code [ref=e357]: value
+            - text: attribute in the HTML, the submitted form data assigns the value
+            - code [ref=e358]: "on"
+            - text: to the group. In this scenario, if the user clicked on the "Phone" option and submitted the form, the resulting form data would be
+            - code [ref=e359]: contact=on
+            - text: ", which isn't helpful. So don't forget to set your"
+            - code [ref=e360]: value
+            - text: attributes!
+          - paragraph [ref=e362]:
+            - strong [ref=e363]: "Note:"
+            - text: If no radio button is selected when the form is submitted, the radio group is not included in the submitted form data at all, since there is no value to report.
+          - paragraph [ref=e364]:
+            - text: It's fairly uncommon to actually want to allow the form to be submitted without any of the radio buttons in a group selected, so it is usually wise to have one default to the
+            - code [ref=e365]: checked
+            - text: state. See
+            - link "Selecting a radio button by default" [ref=e366] [cursor=pointer]:
+              - /url: "#selecting_a_radio_button_by_default"
+            - text: below.
+          - paragraph [ref=e367]:
+            - text: Let's add a bit of code to our example so we can examine the data generated by this form. The HTML is revised to add a
+            - link "<pre>" [ref=e368] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/Reference/Elements/pre
+              - code [ref=e369]: <pre>
+            - text: "block to output the form data into:"
+          - generic [ref=e371]:
+            - generic [ref=e372]:
+              - generic [ref=e373]: html
+              - button "Copy" [ref=e376] [cursor=pointer]:
+                - generic [ref=e377]:
+                  - generic: Copy
+              - generic "Run example in MDN Playground (opens in new tab)" [ref=e378]:
+                - link "Play" [ref=e379] [cursor=pointer]:
+                  - /url: https://developer.mozilla.org/en-US/play?uuid=f66c18cba0431b43d3a22dd71c3b5f98dd40289d&state=nVLBbtswDP0VguvBAYJ4bW%2BZ7MvanTagQHebClSxaFuDLHkynS0I%2FO%2BDZAfp0CFYd7Fo8r3HR1FHbLmzuEVR%2B9CV0gGI2pDVA3H6AxCWGnK6fLCkBoKBLFUMBz8G6APVFAJpqLxjVTF0xK3XW5EvpEVCm%2F0SAgjj%2BpGBDz0VEoPSxksEowuJi8rH1puKriWCUx2d8xJhr%2BwYM9QpYyVCfpa1akcWah%2F%2BIlTeR7zIE%2BbNTm4uOelb7%2BgfndxILB8i%2Fn%2Bd3F5y8oYruZVYfnl1IyI%2F7%2BnPle1GZu9O%2FoZx1xmWWD6mQORz%2BZWKyF88JZEvL0z0gebRrG8kliLvA5XS4RqrYcAt4hq%2Fx7PybuDovoMCtK%2FGjhxvfowUDo%2FpEfqQSYx1iasP0s1465tL8HepaYRLF6kbpfX9nhx%2FNgOTo4g5zbeGjGJpBUUJxzjR3EIrVlCAo5%2FwyYfuTrHKolZUBbDE4EeO%2ByxAosSUrX2AbKaT43AAXyed1SwMZ8rz1XGOp6tjgn57%2FzQVp%2Fj6aZIyPCfNKbXzzcY4R%2BEr%2FYr0mZvqyfymD%2Bm8o1qNlrNocoofXCO31BFu0ZqmZZx%2BAw%3D%3D&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FHTML%2FReference%2FElements%2Finput%2Fradio%2F
+                  - generic [ref=e380]:
+                    - generic: Play
+            - code [ref=e382]:
+              - generic [ref=e383]:
+                - generic [ref=e384]: <form
+                - text: ">"
+              - generic [ref=e385]:
+                - generic [ref=e386]: <fieldset
+                - text: ">"
+              - generic [ref=e387]:
+                - generic [ref=e388]: <legend
+                - text: ">"
+              - text: "Please select your preferred contact method:"
+              - generic [ref=e389]:
+                - generic [ref=e390]: </legend
+                - text: ">"
+              - generic [ref=e391]:
+                - generic [ref=e392]: <div
+                - text: ">"
+              - generic [ref=e393]:
+                - generic [ref=e394]: <input
+                - text: type
+                - generic [ref=e395]: ="radio"
+                - text: id
+                - generic [ref=e396]: ="contactChoice1"
+                - text: name
+                - generic [ref=e397]: ="contact"
+                - text: value
+                - generic [ref=e398]: ="email"
+                - text: />
+              - generic [ref=e399]:
+                - generic [ref=e400]: <label
+                - text: for
+                - generic [ref=e401]: ="contactChoice1"
+                - text: ">"
+              - text: Email
+              - generic [ref=e402]:
+                - generic [ref=e403]: </label
+                - text: ">"
+              - generic [ref=e404]:
+                - generic [ref=e405]: <input
+                - text: type
+                - generic [ref=e406]: ="radio"
+                - text: id
+                - generic [ref=e407]: ="contactChoice2"
+                - text: name
+                - generic [ref=e408]: ="contact"
+                - text: value
+                - generic [ref=e409]: ="phone"
+                - text: />
+              - generic [ref=e410]:
+                - generic [ref=e411]: <label
+                - text: for
+                - generic [ref=e412]: ="contactChoice2"
+                - text: ">"
+              - text: Phone
+              - generic [ref=e413]:
+                - generic [ref=e414]: </label
+                - text: ">"
+              - generic [ref=e415]:
+                - generic [ref=e416]: <input
+                - text: type
+                - generic [ref=e417]: ="radio"
+                - text: id
+                - generic [ref=e418]: ="contactChoice3"
+                - text: name
+                - generic [ref=e419]: ="contact"
+                - text: value
+                - generic [ref=e420]: ="mail"
+                - text: />
+              - generic [ref=e421]:
+                - generic [ref=e422]: <label
+                - text: for
+                - generic [ref=e423]: ="contactChoice3"
+                - text: ">"
+              - text: Mail
+              - generic [ref=e424]:
+                - generic [ref=e425]: </label
+                - text: ">"
+              - generic [ref=e426]:
+                - generic [ref=e427]: </div
+                - text: ">"
+              - generic [ref=e428]:
+                - generic [ref=e429]: <div
+                - text: ">"
+              - generic [ref=e430]:
+                - generic [ref=e431]: <button
+                - text: type
+                - generic [ref=e432]: ="submit"
+                - text: ">"
+              - text: Submit
+              - generic [ref=e433]:
+                - generic [ref=e434]: </button
+                - text: ">"
+              - generic [ref=e435]:
+                - generic [ref=e436]: </div
+                - text: ">"
+              - generic [ref=e437]:
+                - generic [ref=e438]: </fieldset
+                - text: ">"
+              - generic [ref=e439]:
+                - generic [ref=e440]: </form
+                - text: ">"
+              - generic [ref=e441]:
+                - generic [ref=e442]: <pre
+                - text: id
+                - generic [ref=e443]: ="log"
+                - text: ">"
+              - generic [ref=e444]:
+                - generic [ref=e445]: </pre
+                - text: ">"
+          - paragraph [ref=e446]:
+            - text: Then we add some
+            - link "JavaScript" [ref=e447] [cursor=pointer]:
+              - /url: /en-US/docs/Web/JavaScript
+            - text: to set up an event listener on the
+            - link "submit" [ref=e448] [cursor=pointer]:
+              - /url: /en-US/docs/Web/API/HTMLFormElement/submit_event
+              - code [ref=e449]: submit
+            - text: "event, which is sent when the user clicks the \"Submit\" button:"
+          - generic [ref=e451]:
+            - generic [ref=e452]:
+              - generic [ref=e453]: js
+              - button "Copy" [ref=e456] [cursor=pointer]:
+                - generic [ref=e457]:
+                  - generic: Copy
+              - generic "Run example in MDN Playground (opens in new tab)" [ref=e458]:
+                - link "Play" [ref=e459] [cursor=pointer]:
+                  - /url: https://developer.mozilla.org/en-US/play?uuid=f66c18cba0431b43d3a22dd71c3b5f98dd40289d&state=nVLBbtswDP0VguvBAYJ4bW%2BZ7MvanTagQHebClSxaFuDLHkynS0I%2FO%2BDZAfp0CFYd7Fo8r3HR1FHbLmzuEVR%2B9CV0gGI2pDVA3H6AxCWGnK6fLCkBoKBLFUMBz8G6APVFAJpqLxjVTF0xK3XW5EvpEVCm%2F0SAgjj%2BpGBDz0VEoPSxksEowuJi8rH1puKriWCUx2d8xJhr%2BwYM9QpYyVCfpa1akcWah%2F%2BIlTeR7zIE%2BbNTm4uOelb7%2BgfndxILB8i%2Fn%2Bd3F5y8oYruZVYfnl1IyI%2F7%2BnPle1GZu9O%2FoZx1xmWWD6mQORz%2BZWKyF88JZEvL0z0gebRrG8kliLvA5XS4RqrYcAt4hq%2Fx7PybuDovoMCtK%2FGjhxvfowUDo%2FpEfqQSYx1iasP0s1465tL8HepaYRLF6kbpfX9nhx%2FNgOTo4g5zbeGjGJpBUUJxzjR3EIrVlCAo5%2FwyYfuTrHKolZUBbDE4EeO%2ByxAosSUrX2AbKaT43AAXyed1SwMZ8rz1XGOp6tjgn57%2FzQVp%2Fj6aZIyPCfNKbXzzcY4R%2BEr%2FYr0mZvqyfymD%2Bm8o1qNlrNocoofXCO31BFu0ZqmZZx%2BAw%3D%3D&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FHTML%2FReference%2FElements%2Finput%2Fradio%2F
+                  - generic [ref=e460]:
+                    - generic: Play
+            - code [ref=e462]:
+              - text: "const form = document.querySelector(\"form\"); const log = document.querySelector(\"#log\"); form.addEventListener(\"submit\", (event) => { const data = new FormData(form); let output = \"\"; for (const entry of data) { output ="
+              - generic [ref=e463]:
+                - text: "`"
+                - generic [ref=e464]: "${output}"
+                - generic [ref=e465]: "${entry[0]}"
+                - text: =
+                - generic [ref=e466]: "${entry[1]}"
+                - text: "\\r`"
+              - text: "; } log.innerText = output; event.preventDefault(); });"
+          - paragraph [ref=e467]:
+            - text: Try this example out and see how there's never more than one result for the
+            - code [ref=e468]: contact
+            - text: group.
+          - generic [ref=e470]:
+            - generic "Run example in MDN Playground (opens in new tab)" [ref=e472]:
+              - link "Play" [ref=e473] [cursor=pointer]:
+                - /url: https://developer.mozilla.org/en-US/play?uuid=f66c18cba0431b43d3a22dd71c3b5f98dd40289d&state=nVLBbtswDP0VguvBAYJ4bW%2BZ7MvanTagQHebClSxaFuDLHkynS0I%2FO%2BDZAfp0CFYd7Fo8r3HR1FHbLmzuEVR%2B9CV0gGI2pDVA3H6AxCWGnK6fLCkBoKBLFUMBz8G6APVFAJpqLxjVTF0xK3XW5EvpEVCm%2F0SAgjj%2BpGBDz0VEoPSxksEowuJi8rH1puKriWCUx2d8xJhr%2BwYM9QpYyVCfpa1akcWah%2F%2BIlTeR7zIE%2BbNTm4uOelb7%2BgfndxILB8i%2Fn%2Bd3F5y8oYruZVYfnl1IyI%2F7%2BnPle1GZu9O%2FoZx1xmWWD6mQORz%2BZWKyF88JZEvL0z0gebRrG8kliLvA5XS4RqrYcAt4hq%2Fx7PybuDovoMCtK%2FGjhxvfowUDo%2FpEfqQSYx1iasP0s1465tL8HepaYRLF6kbpfX9nhx%2FNgOTo4g5zbeGjGJpBUUJxzjR3EIrVlCAo5%2FwyYfuTrHKolZUBbDE4EeO%2ByxAosSUrX2AbKaT43AAXyed1SwMZ8rz1XGOp6tjgn57%2FzQVp%2Fj6aZIyPCfNKbXzzcY4R%2BEr%2FYr0mZvqyfymD%2Bm8o1qNlrNocoofXCO31BFu0ZqmZZx%2BAw%3D%3D&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FHTML%2FReference%2FElements%2Finput%2Fradio%2F
+                - generic [ref=e474]:
+                  - generic: Play
+            - iframe [ref=e476]:
+              - group "Please select your preferred contact method:" [ref=f12e3]:
+                - generic [ref=f12e4]: "Please select your preferred contact method:"
+                - generic [ref=f12e5]:
+                  - radio "Email" [ref=f12e6]
+                  - text: Email
+                  - radio "Phone" [ref=f12e7]
+                  - text: Phone
+                  - radio "Mail" [ref=f12e8]
+                  - text: Mail
+                - button "Submit" [ref=f12e10]
+        - region "Additional attributes" [ref=e477]:
+          - heading "Additional attributes" [level=2] [ref=e478]:
+            - link "Additional attributes" [ref=e479] [cursor=pointer]:
+              - /url: "#additional_attributes"
+          - paragraph [ref=e480]:
+            - text: In addition to the common attributes shared by all
+            - link "<input>" [ref=e481] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/Reference/Elements/input
+              - code [ref=e482]: <input>
+            - text: elements,
+            - code [ref=e483]: radio
+            - text: inputs support the following attributes.
+          - generic [ref=e484]:
+            - term [ref=e485]:
+              - link "checked" [ref=e486] [cursor=pointer]:
+                - /url: "#checked"
+                - code [ref=e487]: checked
+            - definition [ref=e488]:
+              - paragraph [ref=e489]: A Boolean attribute which, if present, indicates that this radio button is the default selected one in the group.
+              - paragraph [ref=e490]:
+                - text: Unlike other browsers, Firefox by default
+                - link "persists the dynamic checked state (external)" [ref=e491] [cursor=pointer]:
+                  - /url: https://stackoverflow.com/questions/5985839/bug-with-firefox-disabled-attribute-of-input-not-resetting-when-refreshing
+                - text: of an
+                - code [ref=e492]: <input>
+                - text: across page loads. Use the
+                - link "autocomplete" [ref=e493] [cursor=pointer]:
+                  - /url: /en-US/docs/Web/HTML/Reference/Elements/input#autocomplete
+                  - code [ref=e494]: autocomplete
+                - text: attribute to control this feature.
+            - term [ref=e495]:
+              - link "value" [ref=e496] [cursor=pointer]:
+                - /url: "#value_2"
+                - code [ref=e497]: value
+            - definition [ref=e498]:
+              - paragraph [ref=e499]:
+                - text: The
+                - code [ref=e500]: value
+                - text: attribute is one which all
+                - link "<input>" [ref=e501] [cursor=pointer]:
+                  - /url: /en-US/docs/Web/HTML/Reference/Elements/input
+                  - code [ref=e502]: <input>
+                - text: s share; however, it serves a special purpose for inputs of type
+                - code [ref=e503]: radio
+                - text: ": when a form is submitted, only radio buttons which are currently checked are submitted to the server, and the reported value is the value of the"
+                - code [ref=e504]: value
+                - text: attribute. If the
+                - code [ref=e505]: value
+                - text: is not otherwise specified, it is the string
+                - code [ref=e506]: "on"
+                - text: by default. This is demonstrated in the section
+                - link "Value" [ref=e507] [cursor=pointer]:
+                  - /url: "#value"
+                - text: above.
+            - term [ref=e508]:
+              - link "required" [ref=e509] [cursor=pointer]:
+                - /url: /en-US/docs/Web/HTML/Reference/Attributes/required
+                - code [ref=e510]: required
+            - definition [ref=e511]:
+              - paragraph [ref=e512]:
+                - text: The
+                - code [ref=e513]: required
+                - text: attribute is one which most
+                - link "<input>" [ref=e514] [cursor=pointer]:
+                  - /url: /en-US/docs/Web/HTML/Reference/Elements/input
+                  - code [ref=e515]: <input>
+                - text: s share. If any radio button in a same-named group of radio buttons has the
+                - code [ref=e516]: required
+                - text: attribute, a radio button in that group must be checked, although it doesn't have to be the one with the attribute applied.
+        - region "Using radio inputs" [ref=e517]:
+          - heading "Using radio inputs" [level=2] [ref=e518]:
+            - link "Using radio inputs" [ref=e519] [cursor=pointer]:
+              - /url: "#using_radio_inputs"
+          - paragraph [ref=e520]: We already covered the fundamentals of radio buttons above. Let's now look at the other common radio-button-related features and techniques you may need to know about.
+        - region "Selecting a radio button by default" [ref=e521]:
+          - heading "Selecting a radio button by default" [level=3] [ref=e522]:
+            - link "Selecting a radio button by default" [ref=e523] [cursor=pointer]:
+              - /url: "#selecting_a_radio_button_by_default"
+          - paragraph [ref=e524]:
+            - text: To make a radio button selected by default, you include
+            - code [ref=e525]: checked
+            - text: "attribute, as shown in this revised version of the previous example:"
+          - generic [ref=e527]:
+            - generic [ref=e528]:
+              - generic [ref=e529]: html
+              - button "Copy" [ref=e532] [cursor=pointer]:
+                - generic [ref=e533]:
+                  - generic: Copy
+              - generic "Run example in MDN Playground (opens in new tab)" [ref=e534]:
+                - link "Play" [ref=e535] [cursor=pointer]:
+                  - /url: https://developer.mozilla.org/en-US/play?uuid=cf97a6c6769b21f8cd465f6533b41f4207804222&state=nZJNa8MwDIb%2FitC5YNbeguvL2HFQ2NUXx1Zqb%2F4IjlMoY%2F99JE2XZC2j7GTJr%2Fz6saVPtCV4rJA3KQchIwBvHHnTURkzAO7pSNGIgyfVEXTkSRc4pz5Dm6mhnMmATrEoXSBQsclUnE2HJgvjTlMIwF1s%2B3LNAMq5pb3ErIxLEud9Z%2FYSJ99nm5ymp6UcVaC5YKmclO8HiYJyfiloS%2FqDDLCZxauaPDQp37lLvAwGnI01Qsb1A35x38HdSryh%2FIFrbYok8SGWrURxGOr%2Fz7L7i%2BXyTw%2Bh7CSK19WvjPVsbvC613VfSopXvq6vgysSxdsYcHaRb1w4W8wgZ9No4gZ112GFuMH3aS2WAmGF3h1twa9v&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FHTML%2FReference%2FElements%2Finput%2Fradio%2F
+                  - generic [ref=e536]:
+                    - generic: Play
+            - code [ref=e538]:
+              - generic [ref=e539]:
+                - generic [ref=e540]: <form
+                - text: ">"
+              - generic [ref=e541]:
+                - generic [ref=e542]: <fieldset
+                - text: ">"
+              - generic [ref=e543]:
+                - generic [ref=e544]: <legend
+                - text: ">"
+              - text: "Please select your preferred contact method:"
+              - generic [ref=e545]:
+                - generic [ref=e546]: </legend
+                - text: ">"
+              - generic [ref=e547]:
+                - generic [ref=e548]: <div
+                - text: ">"
+              - generic [ref=e549]:
+                - generic [ref=e550]: <input
+                - text: type
+                - generic [ref=e551]: ="radio"
+                - text: id
+                - generic [ref=e552]: ="contactChoice1"
+                - text: name
+                - generic [ref=e553]: ="contact"
+                - text: value
+                - generic [ref=e554]: ="email"
+                - text: checked />
+              - generic [ref=e555]:
+                - generic [ref=e556]: <label
+                - text: for
+                - generic [ref=e557]: ="contactChoice1"
+                - text: ">"
+              - text: Email
+              - generic [ref=e558]:
+                - generic [ref=e559]: </label
+                - text: ">"
+              - generic [ref=e560]:
+                - generic [ref=e561]: <input
+                - text: type
+                - generic [ref=e562]: ="radio"
+                - text: id
+                - generic [ref=e563]: ="contactChoice2"
+                - text: name
+                - generic [ref=e564]: ="contact"
+                - text: value
+                - generic [ref=e565]: ="phone"
+                - text: />
+              - generic [ref=e566]:
+                - generic [ref=e567]: <label
+                - text: for
+                - generic [ref=e568]: ="contactChoice2"
+                - text: ">"
+              - text: Phone
+              - generic [ref=e569]:
+                - generic [ref=e570]: </label
+                - text: ">"
+              - generic [ref=e571]:
+                - generic [ref=e572]: <input
+                - text: type
+                - generic [ref=e573]: ="radio"
+                - text: id
+                - generic [ref=e574]: ="contactChoice3"
+                - text: name
+                - generic [ref=e575]: ="contact"
+                - text: value
+                - generic [ref=e576]: ="mail"
+                - text: />
+              - generic [ref=e577]:
+                - generic [ref=e578]: <label
+                - text: for
+                - generic [ref=e579]: ="contactChoice3"
+                - text: ">"
+              - text: Mail
+              - generic [ref=e580]:
+                - generic [ref=e581]: </label
+                - text: ">"
+              - generic [ref=e582]:
+                - generic [ref=e583]: </div
+                - text: ">"
+              - generic [ref=e584]:
+                - generic [ref=e585]: <div
+                - text: ">"
+              - generic [ref=e586]:
+                - generic [ref=e587]: <button
+                - text: type
+                - generic [ref=e588]: ="submit"
+                - text: ">"
+              - text: Submit
+              - generic [ref=e589]:
+                - generic [ref=e590]: </button
+                - text: ">"
+              - generic [ref=e591]:
+                - generic [ref=e592]: </div
+                - text: ">"
+              - generic [ref=e593]:
+                - generic [ref=e594]: </fieldset
+                - text: ">"
+              - generic [ref=e595]:
+                - generic [ref=e596]: </form
+                - text: ">"
+          - generic [ref=e598]:
+            - generic "Run example in MDN Playground (opens in new tab)" [ref=e600]:
+              - link "Play" [ref=e601] [cursor=pointer]:
+                - /url: https://developer.mozilla.org/en-US/play?uuid=cf97a6c6769b21f8cd465f6533b41f4207804222&state=nZJNa8MwDIb%2FitC5YNbeguvL2HFQ2NUXx1Zqb%2F4IjlMoY%2F99JE2XZC2j7GTJr%2Fz6saVPtCV4rJA3KQchIwBvHHnTURkzAO7pSNGIgyfVEXTkSRc4pz5Dm6mhnMmATrEoXSBQsclUnE2HJgvjTlMIwF1s%2B3LNAMq5pb3ErIxLEud9Z%2FYSJ99nm5ymp6UcVaC5YKmclO8HiYJyfiloS%2FqDDLCZxauaPDQp37lLvAwGnI01Qsb1A35x38HdSryh%2FIFrbYok8SGWrURxGOr%2Fz7L7i%2BXyTw%2Bh7CSK19WvjPVsbvC613VfSopXvq6vgysSxdsYcHaRb1w4W8wgZ9No4gZ112GFuMH3aS2WAmGF3h1twa9v&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FHTML%2FReference%2FElements%2Finput%2Fradio%2F
+                - generic [ref=e602]:
+                  - generic: Play
+            - iframe [ref=e604]:
+              - group "Please select your preferred contact method:" [ref=f13e3]:
+                - generic [ref=f13e4]: "Please select your preferred contact method:"
+                - generic [ref=f13e5]:
+                  - radio "Email" [checked] [ref=f13e6]
+                  - text: Email
+                  - radio "Phone" [ref=f13e7]
+                  - text: Phone
+                  - radio "Mail" [ref=f13e8]
+                  - text: Mail
+                - button "Submit" [ref=f13e10]
+          - paragraph [ref=e605]: In this case, the first radio button is now selected by default.
+          - paragraph [ref=e607]:
+            - strong [ref=e608]: "Note:"
+            - text: If you put the
+            - code [ref=e609]: checked
+            - text: attribute on more than one radio button, later instances will override earlier ones; that is, the last
+            - code [ref=e610]: checked
+            - text: radio button will be the one that is selected. This is because only one radio button in a group can ever be selected at once, and the user agent automatically deselects others each time a new one is marked as checked.
+        - region "Providing a bigger hit area for your radio buttons" [ref=e611]:
+          - heading "Providing a bigger hit area for your radio buttons" [level=3] [ref=e612]:
+            - link "Providing a bigger hit area for your radio buttons" [ref=e613] [cursor=pointer]:
+              - /url: "#providing_a_bigger_hit_area_for_your_radio_buttons"
+          - paragraph [ref=e614]:
+            - text: In the above examples, you may have noticed that you can select a radio button by clicking on its associated
+            - link "<label>" [ref=e615] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/Reference/Elements/label
+              - code [ref=e616]: <label>
+            - text: element, as well as on the radio button itself. This is a really useful feature of HTML form labels that makes it easier for users to click the option they want, especially on small-screen devices like smartphones.
+          - paragraph [ref=e617]:
+            - text: Beyond accessibility, this is another good reason to properly set up
+            - code [ref=e618]: <label>
+            - text: elements on your forms.
+        - region "Validation" [ref=e619]:
+          - heading "Validation" [level=2] [ref=e620]:
+            - link "Validation" [ref=e621] [cursor=pointer]:
+              - /url: "#validation"
+          - paragraph [ref=e622]:
+            - text: In the case of a radio button with the
+            - link "required" [ref=e623] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/Reference/Attributes/required
+              - code [ref=e624]: required
+            - text: attribute set, or a same-named group of radio buttons in which at least one member has
+            - code [ref=e625]: required
+            - text: set, a radio button needs to be selected for the control to be considered valid. If no radio button is checked, the
+            - link "valueMissing" [ref=e626] [cursor=pointer]:
+              - /url: /en-US/docs/Web/API/ValidityState/valueMissing
+              - code [ref=e627]: valueMissing
+            - text: property of a
+            - link "ValidityState" [ref=e628] [cursor=pointer]:
+              - /url: /en-US/docs/Web/API/ValidityState
+              - code [ref=e629]: ValidityState
+            - text: object will return
+            - code [ref=e630]: "true"
+            - text: during validation, and the browser will ask the user to select an option.
+        - region "Styling radio inputs" [ref=e631]:
+          - heading "Styling radio inputs" [level=2] [ref=e632]:
+            - link "Styling radio inputs" [ref=e633] [cursor=pointer]:
+              - /url: "#styling_radio_inputs"
+          - paragraph [ref=e634]: "The following example shows a slightly more thorough version of the example we've seen throughout the article, with some additional styling, and with better semantics established through use of specialized elements. The HTML looks like this:"
+          - generic [ref=e636]:
+            - generic [ref=e637]:
+              - generic [ref=e638]: html
+              - button "Copy" [ref=e641] [cursor=pointer]:
+                - generic [ref=e642]:
+                  - generic: Copy
+              - generic "Run example in MDN Playground (opens in new tab)" [ref=e643]:
+                - link "Play" [ref=e644] [cursor=pointer]:
+                  - /url: https://developer.mozilla.org/en-US/play?uuid=11b08641a29ed3ffae222e57327c338a3b5ff449&state=nVTBjpswEP2VkaveQkmy3ZXqsFyqHiut1CsXYw9husZGtsluGu2%2FV2AIJFlVq3LCM%2FOe37wZOLE6NJpxllXWNXlhALKKUCuPYTgBZBr3aFT%2BpFF4BI8aZYCj7Ry0Dit0DhVIa4KQARoMtVU8S0fQSKHoML4CZGTaLkwngHBs8bFgTiiyBZvjpB4LNvJ%2Bry1J3CzTRjQ4FywzB6G7PoWNIL1MyBrlMypIZy1alKihsu6du%2FIfPUGWDjV5YS4buNL9jtxtwW5UnsW1tTVYsA9p2RYsf%2Brr%2F1%2FL3b%2B0RJ8%2BJOWuYPnPC1eG%2BnQe8OWsyy4EayZ9visbCgXLfw0vWRrTNyxZutjBLB1Xk62Y9J7xYWXh1BdW1oSkEg3pIwcvjE88Oqp2hXnrPVJ04BU5HxJbJb2GiFLkWy2OHCqNr7s%2BIjTtTUIBGx%2BjiQ%2FChSHXCLcnk5Q2BNtwuG9fJ%2Fro0mlR5GhfBw6bWASgyWBSY4zebWdoHNsAFW2LwgkjkYOxBndxuqV1Cl3Sj7TzHO7XnwfGF1Kh5rB5GG%2BYyMfAjOSwbV%2FBW00KPn0bngEQnDCeAlnDYf1l60FoPegUbnfbyf2ZtbUTyqEWgQ4Y6WzL4etVY3z60k5LPQ9nPaUW8nlCxB1YFSb%2BMiJGWm0dh5eaQrynFPJ572xnVDLmJhKAVihFZj%2Bohc16dObKwPVuqSWehvXx9Ac5bBY9REW8tgd0q%2FOxsrLzF%2BpmW5cwIXtzxtZvVM8d3bRhu9DPgcPmPaPYiv3ul5%2BtWKixQcaZ7mfE3v4C&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FHTML%2FReference%2FElements%2Finput%2Fradio%2F
+                  - generic [ref=e645]:
+                    - generic: Play
+            - code [ref=e647]:
+              - generic [ref=e648]:
+                - generic [ref=e649]: <form
+                - text: ">"
+              - generic [ref=e650]:
+                - generic [ref=e651]: <fieldset
+                - text: ">"
+              - generic [ref=e652]:
+                - generic [ref=e653]: <legend
+                - text: ">"
+              - text: "Please select your preferred contact method:"
+              - generic [ref=e654]:
+                - generic [ref=e655]: </legend
+                - text: ">"
+              - generic [ref=e656]:
+                - generic [ref=e657]: <div
+                - text: ">"
+              - generic [ref=e658]:
+                - generic [ref=e659]: <input
+                - text: type
+                - generic [ref=e660]: ="radio"
+                - text: id
+                - generic [ref=e661]: ="contactChoice1"
+                - text: name
+                - generic [ref=e662]: ="contact"
+                - text: value
+                - generic [ref=e663]: ="email"
+                - text: checked />
+              - generic [ref=e664]:
+                - generic [ref=e665]: <label
+                - text: for
+                - generic [ref=e666]: ="contactChoice1"
+                - text: ">"
+              - text: Email
+              - generic [ref=e667]:
+                - generic [ref=e668]: </label
+                - text: ">"
+              - generic [ref=e669]:
+                - generic [ref=e670]: <input
+                - text: type
+                - generic [ref=e671]: ="radio"
+                - text: id
+                - generic [ref=e672]: ="contactChoice2"
+                - text: name
+                - generic [ref=e673]: ="contact"
+                - text: value
+                - generic [ref=e674]: ="phone"
+                - text: />
+              - generic [ref=e675]:
+                - generic [ref=e676]: <label
+                - text: for
+                - generic [ref=e677]: ="contactChoice2"
+                - text: ">"
+              - text: Phone
+              - generic [ref=e678]:
+                - generic [ref=e679]: </label
+                - text: ">"
+              - generic [ref=e680]:
+                - generic [ref=e681]: <input
+                - text: type
+                - generic [ref=e682]: ="radio"
+                - text: id
+                - generic [ref=e683]: ="contactChoice3"
+                - text: name
+                - generic [ref=e684]: ="contact"
+                - text: value
+                - generic [ref=e685]: ="mail"
+                - text: />
+              - generic [ref=e686]:
+                - generic [ref=e687]: <label
+                - text: for
+                - generic [ref=e688]: ="contactChoice3"
+                - text: ">"
+              - text: Mail
+              - generic [ref=e689]:
+                - generic [ref=e690]: </label
+                - text: ">"
+              - generic [ref=e691]:
+                - generic [ref=e692]: </div
+                - text: ">"
+              - generic [ref=e693]:
+                - generic [ref=e694]: <div
+                - text: ">"
+              - generic [ref=e695]:
+                - generic [ref=e696]: <button
+                - text: type
+                - generic [ref=e697]: ="submit"
+                - text: ">"
+              - text: Submit
+              - generic [ref=e698]:
+                - generic [ref=e699]: </button
+                - text: ">"
+              - generic [ref=e700]:
+                - generic [ref=e701]: </div
+                - text: ">"
+              - generic [ref=e702]:
+                - generic [ref=e703]: </fieldset
+                - text: ">"
+              - generic [ref=e704]:
+                - generic [ref=e705]: </form
+                - text: ">"
+          - paragraph [ref=e706]: "The CSS involved in this example is a bit more significant:"
+          - generic [ref=e708]:
+            - generic [ref=e709]:
+              - generic [ref=e710]: css
+              - button "Copy" [ref=e713] [cursor=pointer]:
+                - generic [ref=e714]:
+                  - generic: Copy
+              - generic "Run example in MDN Playground (opens in new tab)" [ref=e715]:
+                - link "Play" [ref=e716] [cursor=pointer]:
+                  - /url: https://developer.mozilla.org/en-US/play?uuid=11b08641a29ed3ffae222e57327c338a3b5ff449&state=nVTBjpswEP2VkaveQkmy3ZXqsFyqHiut1CsXYw9husZGtsluGu2%2FV2AIJFlVq3LCM%2FOe37wZOLE6NJpxllXWNXlhALKKUCuPYTgBZBr3aFT%2BpFF4BI8aZYCj7Ry0Dit0DhVIa4KQARoMtVU8S0fQSKHoML4CZGTaLkwngHBs8bFgTiiyBZvjpB4LNvJ%2Bry1J3CzTRjQ4FywzB6G7PoWNIL1MyBrlMypIZy1alKihsu6du%2FIfPUGWDjV5YS4buNL9jtxtwW5UnsW1tTVYsA9p2RYsf%2Brr%2F1%2FL3b%2B0RJ8%2BJOWuYPnPC1eG%2BnQe8OWsyy4EayZ9visbCgXLfw0vWRrTNyxZutjBLB1Xk62Y9J7xYWXh1BdW1oSkEg3pIwcvjE88Oqp2hXnrPVJ04BU5HxJbJb2GiFLkWy2OHCqNr7s%2BIjTtTUIBGx%2BjiQ%2FChSHXCLcnk5Q2BNtwuG9fJ%2Fro0mlR5GhfBw6bWASgyWBSY4zebWdoHNsAFW2LwgkjkYOxBndxuqV1Cl3Sj7TzHO7XnwfGF1Kh5rB5GG%2BYyMfAjOSwbV%2FBW00KPn0bngEQnDCeAlnDYf1l60FoPegUbnfbyf2ZtbUTyqEWgQ4Y6WzL4etVY3z60k5LPQ9nPaUW8nlCxB1YFSb%2BMiJGWm0dh5eaQrynFPJ572xnVDLmJhKAVihFZj%2Bohc16dObKwPVuqSWehvXx9Ac5bBY9REW8tgd0q%2FOxsrLzF%2BpmW5cwIXtzxtZvVM8d3bRhu9DPgcPmPaPYiv3ul5%2BtWKixQcaZ7mfE3v4C&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FHTML%2FReference%2FElements%2Finput%2Fradio%2F
+                  - generic [ref=e717]:
+                    - generic: Play
+            - code [ref=e719]: "html { font-family: sans-serif; } div:first-of-type { display: flex; align-items: flex-start; margin-bottom: 5px; } label { margin-right: 15px; line-height: 32px; } input { appearance: none; border-radius: 50%; width: 16px; height: 16px; border: 2px solid #999999; transition: 0.2s all linear; margin-right: 5px; position: relative; top: 4px; } input:checked { border: 6px solid black; } button, legend { color: white; background-color: black; padding: 5px 10px; border-radius: 0; border: 0; font-size: 14px; } button:hover, button:focus { color: #999999; } button:active { background-color: white; color: black; outline: 1px solid black; }"
+          - paragraph [ref=e720]:
+            - text: Most notable here is the use of the
+            - link "appearance" [ref=e721] [cursor=pointer]:
+              - /url: /en-US/docs/Web/CSS/Reference/Properties/appearance
+              - code [ref=e722]: appearance
+            - text: property (with prefixes needed to support some browsers). By default, radio buttons (and
+            - link "checkboxes" [ref=e723] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/Reference/Elements/input/checkbox
+            - text: ) are styled with the operating system's native styles for those controls. By specifying
+            - code [ref=e724]: "appearance: none"
+            - text: ", you can remove the native styling altogether, and create your own styles for them. Here we've used a"
+            - link "border" [ref=e725] [cursor=pointer]:
+              - /url: /en-US/docs/Web/CSS/Reference/Properties/border
+              - code [ref=e726]: border
+            - text: along with
+            - link "border-radius" [ref=e727] [cursor=pointer]:
+              - /url: /en-US/docs/Web/CSS/Reference/Properties/border-radius
+              - code [ref=e728]: border-radius
+            - text: and a
+            - link "transition" [ref=e729] [cursor=pointer]:
+              - /url: /en-US/docs/Web/CSS/Reference/Properties/transition
+              - code [ref=e730]: transition
+            - text: to create a nice animating radio selection. Notice also how the
+            - link ":checked" [ref=e731] [cursor=pointer]:
+              - /url: /en-US/docs/Web/CSS/Reference/Selectors/:checked
+              - code [ref=e732]: :checked
+            - text: pseudo-class is used to specify the styles for the radio button's appearance when selected.
+          - paragraph [ref=e734]:
+            - strong [ref=e735]: "Note:"
+            - text: If you wish to use the
+            - link "appearance" [ref=e736] [cursor=pointer]:
+              - /url: /en-US/docs/Web/CSS/Reference/Properties/appearance
+              - code [ref=e737]: appearance
+            - text: property, you should test it very carefully. Although it is supported in most modern browsers, its implementation varies widely. In older browsers, even the keyword
+            - code [ref=e738]: none
+            - text: does not have the same effect across different browsers, and some do not support it at all. The differences are smaller in the newest browsers.
+          - generic [ref=e740]:
+            - generic "Run example in MDN Playground (opens in new tab)" [ref=e742]:
+              - link "Play" [ref=e743] [cursor=pointer]:
+                - /url: https://developer.mozilla.org/en-US/play?uuid=11b08641a29ed3ffae222e57327c338a3b5ff449&state=nVTBjpswEP2VkaveQkmy3ZXqsFyqHiut1CsXYw9husZGtsluGu2%2FV2AIJFlVq3LCM%2FOe37wZOLE6NJpxllXWNXlhALKKUCuPYTgBZBr3aFT%2BpFF4BI8aZYCj7Ry0Dit0DhVIa4KQARoMtVU8S0fQSKHoML4CZGTaLkwngHBs8bFgTiiyBZvjpB4LNvJ%2Bry1J3CzTRjQ4FywzB6G7PoWNIL1MyBrlMypIZy1alKihsu6du%2FIfPUGWDjV5YS4buNL9jtxtwW5UnsW1tTVYsA9p2RYsf%2Brr%2F1%2FL3b%2B0RJ8%2BJOWuYPnPC1eG%2BnQe8OWsyy4EayZ9visbCgXLfw0vWRrTNyxZutjBLB1Xk62Y9J7xYWXh1BdW1oSkEg3pIwcvjE88Oqp2hXnrPVJ04BU5HxJbJb2GiFLkWy2OHCqNr7s%2BIjTtTUIBGx%2BjiQ%2FChSHXCLcnk5Q2BNtwuG9fJ%2Fro0mlR5GhfBw6bWASgyWBSY4zebWdoHNsAFW2LwgkjkYOxBndxuqV1Cl3Sj7TzHO7XnwfGF1Kh5rB5GG%2BYyMfAjOSwbV%2FBW00KPn0bngEQnDCeAlnDYf1l60FoPegUbnfbyf2ZtbUTyqEWgQ4Y6WzL4etVY3z60k5LPQ9nPaUW8nlCxB1YFSb%2BMiJGWm0dh5eaQrynFPJ572xnVDLmJhKAVihFZj%2Bohc16dObKwPVuqSWehvXx9Ac5bBY9REW8tgd0q%2FOxsrLzF%2BpmW5cwIXtzxtZvVM8d3bRhu9DPgcPmPaPYiv3ul5%2BtWKixQcaZ7mfE3v4C&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FHTML%2FReference%2FElements%2Finput%2Fradio%2F
+                - generic [ref=e744]:
+                  - generic: Play
+            - iframe [ref=e746]:
+              - group "Please select your preferred contact method:" [ref=f14e3]:
+                - generic [ref=f14e4]: "Please select your preferred contact method:"
+                - generic [ref=f14e5]:
+                  - radio "Email" [checked] [ref=f14e6]
+                  - generic [ref=f14e7]: Email
+                  - radio "Phone" [ref=f14e8]
+                  - generic [ref=f14e9]: Phone
+                  - radio "Mail" [ref=f14e10]
+                  - generic [ref=f14e11]: Mail
+                - button "Submit" [ref=f14e13]
+          - paragraph [ref=e747]: Notice that when clicking on a radio button, there's a nice, smooth fade out/in effect as the two buttons change state. In addition, the style and coloring of the legend and submit button are customized to have strong contrast. This might not be a look you'd want in a real web application, but it definitely shows off the possibilities.
+        - region "Technical summary" [ref=e748]:
+          - heading "Technical summary" [level=2] [ref=e749]:
+            - link "Technical summary" [ref=e750] [cursor=pointer]:
+              - /url: "#technical_summary"
+          - figure [ref=e751]:
+            - table [ref=e752]:
+              - rowgroup [ref=e753]:
+                - row "Value A string representing the value of the radio button." [ref=e754]:
+                  - cell "Value" [ref=e755]:
+                    - strong [ref=e756]:
+                      - link "Value" [ref=e757] [cursor=pointer]:
+                        - /url: "#value"
+                  - cell "A string representing the value of the radio button." [ref=e758]
+                - row "Events change and input" [ref=e759]:
+                  - cell "Events" [ref=e760]:
+                    - strong [ref=e761]: Events
+                  - cell "change and input" [ref=e762]:
+                    - link "change" [ref=e763] [cursor=pointer]:
+                      - /url: /en-US/docs/Web/API/HTMLElement/change_event
+                      - code [ref=e764]: change
+                    - text: and
+                    - link "input" [ref=e765] [cursor=pointer]:
+                      - /url: /en-US/docs/Web/API/Element/input_event
+                      - code [ref=e766]: input
+                - row "Supported common attributes checked, value and required" [ref=e767]:
+                  - cell "Supported common attributes" [ref=e768]:
+                    - strong [ref=e769]: Supported common attributes
+                  - cell "checked, value and required" [ref=e770]:
+                    - code [ref=e771]:
+                      - link "checked" [ref=e772] [cursor=pointer]:
+                        - /url: "#checked"
+                    - text: ","
+                    - code [ref=e773]:
+                      - link "value" [ref=e774] [cursor=pointer]:
+                        - /url: "#value"
+                    - text: and
+                    - code [ref=e775]:
+                      - link "required" [ref=e776] [cursor=pointer]:
+                        - /url: /en-US/docs/Web/HTML/Reference/Attributes/required
+                - row "IDL attributes checked and value" [ref=e777]:
+                  - cell "IDL attributes" [ref=e778]:
+                    - strong [ref=e779]: IDL attributes
+                  - cell "checked and value" [ref=e780]:
+                    - code [ref=e781]: checked
+                    - text: and
+                    - code [ref=e782]: value
+                - row "DOM interface HTMLInputElement" [ref=e783]:
+                  - cell "DOM interface" [ref=e784]:
+                    - strong [ref=e785]: DOM interface
+                  - cell "HTMLInputElement" [ref=e786]:
+                    - link "HTMLInputElement" [ref=e787] [cursor=pointer]:
+                      - /url: /en-US/docs/Web/API/HTMLInputElement
+                      - code [ref=e788]: HTMLInputElement
+                - row "Implicit ARIA Role radio" [ref=e789]:
+                  - cell "Implicit ARIA Role" [ref=e790]:
+                    - strong [ref=e791]: Implicit ARIA Role
+                  - cell "radio" [ref=e792]:
+                    - code [ref=e793]:
+                      - link "radio" [ref=e794] [cursor=pointer]:
+                        - /url: /en-US/docs/Web/Accessibility/ARIA/Reference/Roles/radio_role
+        - region "Specifications" [ref=e795]:
+          - heading "Specifications" [level=2] [ref=e796]:
+            - link "Specifications" [ref=e797] [cursor=pointer]:
+              - /url: "#specifications"
+          - table [ref=e798]:
+            - rowgroup [ref=e799]:
+              - row "Specification" [ref=e800]:
+                - columnheader "Specification" [ref=e801]
+            - rowgroup [ref=e802]:
+              - 'row "HTML # radio-button-state-(type=radio) (external)" [ref=e803]':
+                - 'cell "HTML # radio-button-state-(type=radio) (external)" [ref=e804]':
+                  - 'link "HTML # radio-button-state-(type=radio) (external)" [ref=e805] [cursor=pointer]':
+                    - /url: https://html.spec.whatwg.org/multipage/input.html#radio-button-state-(type=radio)
+                    - text: HTML
+                    - text: "# radio-button-state-(type=radio) (external)"
+        - region "Browser compatibility" [ref=e806]:
+          - heading "Browser compatibility" [level=2] [ref=e807]:
+            - link "Browser compatibility" [ref=e808] [cursor=pointer]:
+              - /url: "#browser_compatibility"
+          - generic [ref=e810]:
+            - figure [ref=e811]:
+              - figure [ref=e812]:
+                - generic [ref=e813]:
+                  - link "Report problems with this compatibility data (external)" [ref=e814] [cursor=pointer]:
+                    - /url: https://github.com/mdn/browser-compat-data/issues/new?mdn-url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FHTML%2FReference%2FElements%2Finput%2Fradio&metadata=%3C%21--+Do+not+make+changes+below+this+line+--%3E%0A%3Cdetails%3E%0A%3Csummary%3EMDN+page+report+details%3C%2Fsummary%3E%0A%0A*+Query%3A+%60html.elements.input.type_radio%60%0A*+Report+started%3A+2026-07-24T03%3A08%3A31.306Z%0A%0A%3C%2Fdetails%3E&title=html.elements.input.type_radio+-+%3CSUMMARIZE+THE+PROBLEM%3E&template=data-problem.yml
+                  - text: •
+                  - link "View data on GitHub (external)" [ref=e815] [cursor=pointer]:
+                    - /url: https://github.com/mdn/browser-compat-data/tree/main/html/elements/input/radio.json
+                - table [ref=e816]:
+                  - rowgroup [ref=e817]:
+                    - row "desktop mobile" [ref=e818]:
+                      - cell [ref=e819]
+                      - columnheader "desktop" [ref=e820]:
+                        - generic [ref=e822]: desktop
+                      - columnheader "mobile" [ref=e823]:
+                        - generic [ref=e825]: mobile
+                    - row "Chrome Edge Firefox Opera Safari Chrome Android Firefox for Android Opera Android Safari on iOS Samsung Internet WebView Android WebView on iOS" [ref=e826]:
+                      - cell [ref=e827]
+                      - columnheader "Chrome" [ref=e828]:
+                        - generic [ref=e829]: Chrome
+                      - columnheader "Edge" [ref=e831]:
+                        - generic [ref=e832]: Edge
+                      - columnheader "Firefox" [ref=e834]:
+                        - generic [ref=e835]: Firefox
+                      - columnheader "Opera" [ref=e837]:
+                        - generic [ref=e838]: Opera
+                      - columnheader "Safari" [ref=e840]:
+                        - generic [ref=e841]: Safari
+                      - columnheader "Chrome Android" [ref=e843]:
+                        - generic [ref=e844]: Chrome Android
+                      - columnheader "Firefox for Android" [ref=e846]:
+                        - generic [ref=e847]: Firefox for Android
+                      - columnheader "Opera Android" [ref=e849]:
+                        - generic [ref=e850]: Opera Android
+                      - columnheader "Safari on iOS" [ref=e852]:
+                        - generic [ref=e853]: Safari on iOS
+                      - columnheader "Samsung Internet" [ref=e855]:
+                        - generic [ref=e856]: Samsung Internet
+                      - columnheader "WebView Android" [ref=e858]:
+                        - generic [ref=e859]: WebView Android
+                      - columnheader "WebView on iOS" [ref=e861]:
+                        - generic [ref=e862]: WebView on iOS
+                  - rowgroup [ref=e864]:
+                    - row "type=\"radio\" 1 12 1 15 1 18 4 14 1 1 4.4 1" [ref=e865]:
+                      - rowheader "type=\"radio\"" [ref=e866]:
+                        - code [ref=e869]: type="radio"
+                      - cell "1" [ref=e870]:
+                        - button "1" [ref=e871] [cursor=pointer]:
+                          - generic [ref=e872]:
+                            - generic "Chrome – Full support" [ref=e875]
+                            - 'generic "Chrome 1 – Release date: 2008-12-11" [ref=e877]': "1"
+                      - cell "12" [ref=e878]:
+                        - button "12" [ref=e879] [cursor=pointer]:
+                          - generic [ref=e880]:
+                            - generic "Edge – Full support" [ref=e883]
+                            - 'generic "Edge 12 – Release date: 2015-07-29" [ref=e885]': "12"
+                      - cell "1" [ref=e886]:
+                        - button "1" [ref=e887] [cursor=pointer]:
+                          - generic [ref=e888]:
+                            - generic "Firefox – Full support" [ref=e891]
+                            - 'generic "Firefox 1 – Release date: 2004-11-09" [ref=e893]': "1"
+                      - cell "15" [ref=e894]:
+                        - button "15" [ref=e895] [cursor=pointer]:
+                          - generic [ref=e896]:
+                            - generic "Opera – Full support" [ref=e899]
+                            - 'generic "Opera 15 – Release date: 2013-07-02" [ref=e901]': "15"
+                      - cell "1" [ref=e902]:
+                        - button "1" [ref=e903] [cursor=pointer]:
+                          - generic [ref=e904]:
+                            - generic "Safari – Full support" [ref=e907]
+                            - 'generic "Safari 1 – Release date: 2003-06-23" [ref=e909]': "1"
+                      - cell "18" [ref=e910]:
+                        - button "18" [ref=e911] [cursor=pointer]:
+                          - generic [ref=e912]:
+                            - generic "Chrome Android – Full support" [ref=e915]
+                            - 'generic "Chrome Android 18 – Release date: 2012-06-27" [ref=e917]': "18"
+                      - cell "4" [ref=e918]:
+                        - button "4" [ref=e919] [cursor=pointer]:
+                          - generic [ref=e920]:
+                            - generic "Firefox for Android – Full support" [ref=e923]
+                            - 'generic "Firefox for Android 4 – Release date: 2011-03-29" [ref=e925]': "4"
+                      - cell "14" [ref=e926]:
+                        - button "14" [ref=e927] [cursor=pointer]:
+                          - generic [ref=e928]:
+                            - generic "Opera Android – Full support" [ref=e931]
+                            - 'generic "Opera Android 14 – Release date: 2013-05-21" [ref=e933]': "14"
+                      - cell "1" [ref=e934]:
+                        - button "1" [ref=e935] [cursor=pointer]:
+                          - generic [ref=e936]:
+                            - generic "Safari on iOS – Full support" [ref=e939]
+                            - 'generic "Safari on iOS 1 – Release date: 2007-06-29" [ref=e941]': "1"
+                      - cell "1" [ref=e942]:
+                        - button "1" [ref=e943] [cursor=pointer]:
+                          - generic [ref=e944]:
+                            - generic "Samsung Internet – Full support" [ref=e947]
+                            - 'generic "Samsung Internet 1.0 – Release date: 2013-04-27" [ref=e949]': "1"
+                      - cell "4.4" [ref=e950]:
+                        - button "4.4" [ref=e951] [cursor=pointer]:
+                          - generic [ref=e952]:
+                            - generic "WebView Android – Full support" [ref=e955]
+                            - 'generic "WebView Android 4.4 – Release date: 2013-12-09" [ref=e957]': "4.4"
+                      - cell "1" [ref=e958]:
+                        - button "1" [ref=e959] [cursor=pointer]:
+                          - generic [ref=e960]:
+                            - generic "WebView on iOS – Full support" [ref=e963]
+                            - 'generic "WebView on iOS 1 – Release date: 2007-06-29" [ref=e965]': "1"
+            - generic [ref=e966]:
+              - heading "Legend" [level=3] [ref=e967]
+              - paragraph [ref=e968]: "Tip: you can click/tap on a cell for more information."
+              - generic [ref=e970]:
+                - term [ref=e971]:
+                  - generic "Full support" [ref=e973]:
+                    - generic [ref=e974]: Full support
+                - definition [ref=e975]: Full support
+        - region "See also" [ref=e976]:
+          - heading "See also" [level=2] [ref=e977]:
+            - link "See also" [ref=e978] [cursor=pointer]:
+              - /url: "#see_also"
+          - list [ref=e979]:
+            - listitem [ref=e980]:
+              - link "<input>" [ref=e981] [cursor=pointer]:
+                - /url: /en-US/docs/Web/HTML/Reference/Elements/input
+                - code [ref=e982]: <input>
+              - text: and the
+              - link "HTMLInputElement" [ref=e983] [cursor=pointer]:
+                - /url: /en-US/docs/Web/API/HTMLInputElement
+                - code [ref=e984]: HTMLInputElement
+              - text: interface that implements it.
+            - listitem [ref=e985]:
+              - link "RadioNodeList" [ref=e986] [cursor=pointer]:
+                - /url: /en-US/docs/Web/API/RadioNodeList
+                - code [ref=e987]: RadioNodeList
+              - text: ": the interface that describes a list of radio buttons"
+        - region "Help improve MDN" [ref=e988]:
+          - generic [ref=e989]:
+            - img [ref=e990]
+            - heading "Help improve MDN" [level=2] [ref=e997]
+            - group [ref=e999]:
+              - generic [ref=e1000]: Was this page helpful to you?
+              - generic [ref=e1001]:
+                - button "Yes" [ref=e1003] [cursor=pointer]:
+                  - img [ref=e1005]
+                  - generic [ref=e1007]:
+                    - generic: "Yes"
+                - button "No" [ref=e1009] [cursor=pointer]:
+                  - img [ref=e1011]
+                  - generic [ref=e1013]:
+                    - generic: "No"
+            - link "Learn how to contribute" [ref=e1014] [cursor=pointer]:
+              - /url: /en-US/docs/MDN/Community/Getting_started
+            - paragraph [ref=e1015]:
+              - text: This page was last modified on
+              - time [ref=e1016]: Jun 9, 2026
+              - text: by
+              - link "MDN contributors" [ref=e1017] [cursor=pointer]:
+                - /url: /en-US/docs/Web/HTML/Reference/Elements/input/radio/contributors.txt
+              - text: .
+            - generic [ref=e1018]:
+              - link "View this page on GitHub (external)" [ref=e1019] [cursor=pointer]:
+                - /url: https://github.com/mdn/content/blob/main/files/en-us/web/html/reference/elements/input/radio/index.md?plain=1
+              - text: •
+              - link "Report a problem with this content (external)" [ref=e1020] [cursor=pointer]:
+                - /url: https://github.com/mdn/content/issues/new?template=page-report.yml&mdn-url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FHTML%2FReference%2FElements%2Finput%2Fradio&metadata=%3C%21--+Do+not+make+changes+below+this+line+--%3E%0A%3Cdetails%3E%0A%3Csummary%3EPage+report+details%3C%2Fsummary%3E%0A%0A*+Folder%3A+%60en-us%2Fweb%2Fhtml%2Freference%2Felements%2Finput%2Fradio%60%0A*+MDN+URL%3A+https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FHTML%2FReference%2FElements%2Finput%2Fradio%0A*+GitHub+URL%3A+https%3A%2F%2Fgithub.com%2Fmdn%2Fcontent%2Fblob%2Fmain%2Ffiles%2Fen-us%2Fweb%2Fhtml%2Freference%2Felements%2Finput%2Fradio%2Findex.md%0A*+Last+commit%3A+https%3A%2F%2Fgithub.com%2Fmdn%2Fcontent%2Fcommit%2F3944506d4afeeed774687cf3fd950878c6229bbc%0A*+Document+last+modified%3A+2026-06-09T11%3A58%3A01.000Z%0A%0A%3C%2Fdetails%3E
+    - complementary [ref=e1021]:
+      - navigation [ref=e1022]:
+        - generic [ref=e1024]:
+          - generic [ref=e1026]: Filter sidebar
+          - textbox "Filter sidebar" [ref=e1027]:
+            - /placeholder: Filter
+        - list [ref=e1029]:
+          - listitem [ref=e1030]:
+            - link "HTML" [ref=e1031] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML
+          - listitem [ref=e1032]:
+            - group [ref=e1033]:
+              - generic "Guides" [ref=e1034] [cursor=pointer]:
+                - link "Guides" [ref=e1035]:
+                  - /url: /en-US/docs/Web/HTML/Guides
+          - listitem [ref=e1036]:
+            - link "How to" [ref=e1037] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/How_to
+          - listitem [ref=e1038]:
+            - link "Define terms with HTML" [ref=e1039] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/How_to/Define_terms_with_HTML
+          - listitem [ref=e1040]:
+            - link "Use data attributes" [ref=e1041] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/How_to/Use_data_attributes
+          - listitem [ref=e1042]:
+            - link "Use cross-origin images" [ref=e1043] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/How_to/CORS_enabled_image
+          - listitem [ref=e1044]:
+            - link "Add a hitmap on top of an image" [ref=e1045] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/How_to/Add_a_hit_map_on_top_of_an_image
+          - listitem [ref=e1046]:
+            - link "Author fast-loading HTML pages" [ref=e1047] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/How_to/Author_fast-loading_HTML_pages
+          - listitem [ref=e1048]:
+            - link "Add JavaScript" [ref=e1049] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/How_to/Add_JavaScript_to_your_web_page
+          - listitem [ref=e1050]:
+            - link "Reference" [ref=e1051] [cursor=pointer]:
+              - /url: /en-US/docs/Web/HTML/Reference
+          - listitem [ref=e1052]:
+            - group [ref=e1053]:
+              - generic "Elements" [ref=e1054] [cursor=pointer]:
+                - link "Elements" [ref=e1055]:
+                  - /url: /en-US/docs/Web/HTML/Reference/Elements
+          - listitem [ref=e1056]:
+            - group [ref=e1057]:
+              - generic "Attributes" [ref=e1058] [cursor=pointer]:
+                - link "Attributes" [ref=e1059]:
+                  - /url: /en-US/docs/Web/HTML/Reference/Attributes
+          - listitem [ref=e1060]:
+            - group [ref=e1061]:
+              - generic "Global attributes" [ref=e1062] [cursor=pointer]:
+                - link "Global attributes" [ref=e1063]:
+                  - /url: /en-US/docs/Web/HTML/Reference/Global_attributes
+          - listitem [ref=e1064]:
+            - group [ref=e1065]:
+              - generic "Attributes by element" [ref=e1066] [cursor=pointer]:
+                - generic [ref=e1067]: Attributes by element
+              - list [ref=e1068]:
+                - listitem [ref=e1069]:
+                  - group [ref=e1070]:
+                    - generic "<input type>" [ref=e1071] [cursor=pointer]:
+                      - code [ref=e1073]: <input type>
+                    - list [ref=e1074]:
+                      - listitem [ref=e1075]:
+                        - link "<input type=\"button\">" [ref=e1076] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/button
+                          - code [ref=e1077]: <input type="button">
+                      - listitem [ref=e1078]:
+                        - link "<input type=\"checkbox\">" [ref=e1079] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/checkbox
+                          - code [ref=e1080]: <input type="checkbox">
+                      - listitem [ref=e1081]:
+                        - link "<input type=\"color\">" [ref=e1082] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/color
+                          - code [ref=e1083]: <input type="color">
+                      - listitem [ref=e1084]:
+                        - link "<input type=\"date\">" [ref=e1085] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/date
+                          - code [ref=e1086]: <input type="date">
+                      - listitem [ref=e1087]:
+                        - link "<input type=\"datetime-local\">" [ref=e1088] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/datetime-local
+                          - code [ref=e1089]: <input type="datetime-local">
+                      - listitem [ref=e1090]:
+                        - link "<input type=\"email\">" [ref=e1091] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/email
+                          - code [ref=e1092]: <input type="email">
+                      - listitem [ref=e1093]:
+                        - link "<input type=\"file\">" [ref=e1094] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/file
+                          - code [ref=e1095]: <input type="file">
+                      - listitem [ref=e1096]:
+                        - link "<input type=\"hidden\">" [ref=e1097] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/hidden
+                          - code [ref=e1098]: <input type="hidden">
+                      - listitem [ref=e1099]:
+                        - link "<input type=\"image\">" [ref=e1100] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/image
+                          - code [ref=e1101]: <input type="image">
+                      - listitem [ref=e1102]:
+                        - link "<input type=\"month\">" [ref=e1103] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/month
+                          - code [ref=e1104]: <input type="month">
+                      - listitem [ref=e1105]:
+                        - link "<input type=\"number\">" [ref=e1106] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/number
+                          - code [ref=e1107]: <input type="number">
+                      - listitem [ref=e1108]:
+                        - link "<input type=\"password\">" [ref=e1109] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/password
+                          - code [ref=e1110]: <input type="password">
+                      - listitem [ref=e1111]:
+                        - emphasis [ref=e1112]:
+                          - link "<input type=\"radio\">" [ref=e1113] [cursor=pointer]:
+                            - /url: /en-US/docs/Web/HTML/Reference/Elements/input/radio
+                            - code [ref=e1114]: <input type="radio">
+                      - listitem [ref=e1115]:
+                        - link "<input type=\"range\">" [ref=e1116] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/range
+                          - code [ref=e1117]: <input type="range">
+                      - listitem [ref=e1118]:
+                        - link "<input type=\"reset\">" [ref=e1119] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/reset
+                          - code [ref=e1120]: <input type="reset">
+                      - listitem [ref=e1121]:
+                        - link "<input type=\"search\">" [ref=e1122] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/search
+                          - code [ref=e1123]: <input type="search">
+                      - listitem [ref=e1124]:
+                        - link "<input type=\"submit\">" [ref=e1125] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/submit
+                          - code [ref=e1126]: <input type="submit">
+                      - listitem [ref=e1127]:
+                        - link "<input type=\"tel\">" [ref=e1128] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/tel
+                          - code [ref=e1129]: <input type="tel">
+                      - listitem [ref=e1130]:
+                        - link "<input type=\"text\">" [ref=e1131] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/text
+                          - code [ref=e1132]: <input type="text">
+                      - listitem [ref=e1133]:
+                        - link "<input type=\"time\">" [ref=e1134] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/time
+                          - code [ref=e1135]: <input type="time">
+                      - listitem [ref=e1136]:
+                        - link "<input type=\"url\">" [ref=e1137] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/url
+                          - code [ref=e1138]: <input type="url">
+                      - listitem [ref=e1139]:
+                        - link "<input type=\"week\">" [ref=e1140] [cursor=pointer]:
+                          - /url: /en-US/docs/Web/HTML/Reference/Elements/input/week
+                          - code [ref=e1141]: <input type="week">
+                - listitem [ref=e1142]:
+                  - group [ref=e1143]:
+                    - generic "<script type>" [ref=e1144] [cursor=pointer]:
+                      - link "<script type>" [ref=e1145]:
+                        - /url: /en-US/docs/Web/HTML/Reference/Elements/script/type
+                        - code [ref=e1146]: <script type>
+                - listitem [ref=e1147]:
+                  - group [ref=e1148]:
+                    - generic "<meta name>" [ref=e1149] [cursor=pointer]:
+                      - link "<meta name>" [ref=e1150]:
+                        - /url: /en-US/docs/Web/HTML/Reference/Elements/meta/name
+                - listitem [ref=e1151]:
+                  - link "<meta http-equiv>" [ref=e1152] [cursor=pointer]:
+                    - /url: /en-US/docs/Web/HTML/Reference/Elements/meta/http-equiv
+          - listitem [ref=e1153]:
+            - group [ref=e1154]:
+              - generic "Attribute values" [ref=e1155] [cursor=pointer]:
+                - generic [ref=e1156]: Attribute values
+  - generic [ref=e1157]:
+    - generic [ref=e1160]:
+      - link "WorkOS Homepage Bottom Banner" [ref=e1161] [cursor=pointer]:
+        - /url: /pong/click?code=aHR0cHM6Ly9zcnYuYnV5c2VsbGFkcy5jb20vYWRzL2NsaWNrL3gvR1RORDQyN1lDRUFENDIzN0NUQUxZS1FVRlRCSVZLSjdDS0FENlozSkNBQURQS0pVQ1RCRDQyUUtDNlNEVEszSUNWWUk2NVFJQ1ZCSUVLMzdGNkFEQ0szSUhFWUk1NTNXRlRTRDZLM0VDVE5DWUJaNTJL.OLE4WsEec3ft%2F7ShEdpuNkZojp9nV9AlDJnVKVKfKio%3D&version=2
+        - img "WorkOS Homepage Bottom Banner" [ref=e1162]
+      - link "Ad" [ref=e1164] [cursor=pointer]:
+        - /url: /en-US/advertising
+    - contentinfo [ref=e1165]:
+      - generic [ref=e1166]:
+        - generic [ref=e1167]:
+          - link "MDN logo" [ref=e1168] [cursor=pointer]:
+            - /url: /
+            - img "MDN" [ref=e1169]
+          - paragraph [ref=e1171]: Your blueprint for a better internet.
+        - list [ref=e1172]:
+          - listitem [ref=e1173]:
+            - link "MDN on GitHub" [ref=e1174] [cursor=pointer]:
+              - /url: https://github.com/mdn/
+          - listitem [ref=e1175]:
+            - link "MDN on Bluesky" [ref=e1176] [cursor=pointer]:
+              - /url: https://bsky.app/profile/developer.mozilla.org
+          - listitem [ref=e1177]:
+            - link "MDN on X" [ref=e1178] [cursor=pointer]:
+              - /url: https://x.com/mozdevnet
+          - listitem [ref=e1179]:
+            - link "MDN on Mastodon" [ref=e1180] [cursor=pointer]:
+              - /url: https://mastodon.social/@mdn
+          - listitem [ref=e1181]:
+            - link "MDN blog RSS feed" [ref=e1182] [cursor=pointer]:
+              - /url: /en-US/blog/rss.xml
+        - generic [ref=e1183]:
+          - term [ref=e1184]: MDN
+          - definition [ref=e1185]:
+            - list [ref=e1186]:
+              - listitem [ref=e1187]:
+                - link "About" [ref=e1188] [cursor=pointer]:
+                  - /url: /en-US/about
+              - listitem [ref=e1189]:
+                - link "Blog" [ref=e1190] [cursor=pointer]:
+                  - /url: /en-US/blog/
+              - listitem [ref=e1191]:
+                - link "Mozilla careers (external)" [ref=e1192] [cursor=pointer]:
+                  - /url: https://www.mozilla.org/en-US/careers/listings/
+              - listitem [ref=e1193]:
+                - link "Advertise with us" [ref=e1194] [cursor=pointer]:
+                  - /url: /en-US/advertising
+              - listitem [ref=e1195]:
+                - link "MDN Plus" [ref=e1196] [cursor=pointer]:
+                  - /url: /en-US/plus
+              - listitem [ref=e1197]:
+                - link "Product help (external)" [ref=e1198] [cursor=pointer]:
+                  - /url: https://support.mozilla.org/products/mdn-plus
+        - generic [ref=e1199]:
+          - term [ref=e1200]: Contribute
+          - definition [ref=e1201]:
+            - list [ref=e1202]:
+              - listitem [ref=e1203]:
+                - link "MDN Community" [ref=e1204] [cursor=pointer]:
+                  - /url: /en-US/community
+              - listitem [ref=e1205]:
+                - link "Community resources" [ref=e1206] [cursor=pointer]:
+                  - /url: /en-US/docs/MDN/Community
+              - listitem [ref=e1207]:
+                - link "Writing guidelines" [ref=e1208] [cursor=pointer]:
+                  - /url: /en-US/docs/MDN/Writing_guidelines
+              - listitem [ref=e1209]:
+                - link "MDN Discord (external)" [ref=e1210] [cursor=pointer]:
+                  - /url: /discord
+              - listitem [ref=e1211]:
+                - link "MDN on GitHub (external)" [ref=e1212] [cursor=pointer]:
+                  - /url: https://github.com/mdn
+        - generic [ref=e1213]:
+          - term [ref=e1214]: Developers
+          - definition [ref=e1215]:
+            - list [ref=e1216]:
+              - listitem [ref=e1217]:
+                - link "Web technologies" [ref=e1218] [cursor=pointer]:
+                  - /url: /en-US/docs/Web
+              - listitem [ref=e1219]:
+                - link "Learn web development" [ref=e1220] [cursor=pointer]:
+                  - /url: /en-US/docs/Learn_web_development
+              - listitem [ref=e1221]:
+                - link "Guides" [ref=e1222] [cursor=pointer]:
+                  - /url: /en-US/docs/MDN/Guides
+              - listitem [ref=e1223]:
+                - link "Tutorials" [ref=e1224] [cursor=pointer]:
+                  - /url: /en-US/docs/MDN/Tutorials
+              - listitem [ref=e1225]:
+                - link "Glossary" [ref=e1226] [cursor=pointer]:
+                  - /url: /en-US/docs/Glossary
+              - listitem [ref=e1227]:
+                - link "Hacks blog (external)" [ref=e1228] [cursor=pointer]:
+                  - /url: https://hacks.mozilla.org/
+      - generic [ref=e1229]:
+        - link "Mozilla logo" [ref=e1230] [cursor=pointer]:
+          - /url: https://www.mozilla.org/
+          - img "Mozilla" [ref=e1231]
+        - list [ref=e1233]:
+          - listitem [ref=e1234]:
+            - link "Website Privacy Notice (external)" [ref=e1235] [cursor=pointer]:
+              - /url: https://www.mozilla.org/privacy/websites/
+          - listitem [ref=e1236]:
+            - link "Telemetry Settings (external)" [ref=e1237] [cursor=pointer]:
+              - /url: https://www.mozilla.org/en-US/privacy/websites/data-preferences/
+          - listitem [ref=e1238]:
+            - link "Legal (external)" [ref=e1239] [cursor=pointer]:
+              - /url: https://www.mozilla.org/about/legal/terms/mozilla
+          - listitem [ref=e1240]:
+            - link "Community Participation Guidelines (external)" [ref=e1241] [cursor=pointer]:
+              - /url: https://www.mozilla.org/about/governance/policies/participation/
+        - paragraph [ref=e1242]:
+          - text: Portions of this content are ©1998–2026 by individual mozilla.org contributors. Content available under
+          - link "a Creative Commons license" [ref=e1243] [cursor=pointer]:
+            - /url: /docs/MDN/Writing_guidelines/Attrib_copyright_license
+          - text: .
+```
+
+# Test source
+
+```ts
+  1 | import{test,expect} from '@playwright/test'
+  2 | test('Verify Radio Button status', async({page}) => {
+  3 |     await page.goto('https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio')
+  4 |     await page.waitForTimeout(5000)
+> 5 |     await page.getByLabel('Huey').check()
+    |                                   ^ Error: locator.check: Test timeout of 30000ms exceeded.
+  6 | })
+```

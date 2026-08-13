@@ -1,0 +1,5 @@
+[
+  '\n      \n      \n    ',
+  'Was this page helpful to you?\n      ',
+  '\n        Filter sidebar\n      '
+]

@@ -1,0 +1,69 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: VerizonVerifyCheckbox.spec.ts >> Verify Checkbox Status.
+- Location: tests/VerizonVerifyCheckbox.spec.ts:11:5
+
+# Error details
+
+```
+Error: expect(locator).toBeChecked() failed
+
+Locator:  locator('input[type="checkbox"]')
+Expected: checked
+Received: unchecked
+Timeout:  5000ms
+
+Call log:
+  - Expect "toBeChecked" with timeout 5000ms
+  - waiting for locator('input[type="checkbox"]')
+    9 × locator resolved to <input required="" id="_r_23_" tabindex="0" type="checkbox" aria-invalid="false" name="termsCondition" data-testid="termsTestId" class="VDS__MON__checkbox-module__ci6wP" aria-label="I agree to the My Verizon Terms & Conditions and Privacy Policy.California residents can also review our California Privacy Notice."/>
+      - unexpected value "unchecked"
+
+```
+
+```yaml
+- checkbox "I agree to the My Verizon Terms & Conditions and Privacy Policy.California residents can also review our California Privacy Notice."
+```
+
+# Test source
+
+```ts
+  1  | import{test,expect, Locator} from '@playwright/test'
+  2  | import {SignIn} from'../Pages/orangehrmSignIn';
+  3  | import{LoginData} from '../Testdata/logindata';//foldername/file name
+  4  | 
+  5  | 
+  6  | const signIn = new SignIn();
+  7  | const logindata = new LoginData();
+  8  | 
+  9  | 
+  10 | 
+  11 | test('Verify Checkbox Status.', async ({ page }) => {
+  12 |     await signIn.openurl(page, "https://secure.verizon.com/account/register/start")
+  13 |     const Checkbox = page.locator('input[type="checkbox"]');
+  14 |      
+  15 |     //TO VERIFY THE CHECKED CHECKBOX
+> 16 |     await expect(Checkbox).toBeChecked();
+     |                            ^ Error: expect(locator).toBeChecked() failed
+  17 |     
+  18 | 
+  19 |     //TO CHECK IT
+  20 |     await Checkbox.check();
+  21 | 
+  22 |     // Verify it is initially unchecked
+  23 |     await expect(Checkbox).not.toBeChecked();
+  24 | 
+  25 |     
+  26 |     
+  27 | 
+  28 | }
+  29 | );
+  30 | 
+  31 | 
+```

@@ -1,0 +1,10 @@
+[ 'Cierra', 'Alden', 'Kierra' ]
+Name   : Cierra
+Age    : 39
+Salary : 10000
+Name   : Alden
+Age    : 45
+Salary : 12000
+Name   : Kierra
+Age    : 29
+Salary : 2000
