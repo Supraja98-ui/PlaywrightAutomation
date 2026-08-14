@@ -20,7 +20,7 @@ test('Verify Radio Button status', async({page}) => {
   await expect(demoFrame.locator('//div/label[@for="dewey"]')).toBeChecked();*/
 
   const frame = page.frames().find(f => f.url().includes('mdnplay.dev'));
-  //await page.waitForTimeout(5000)
+  await page.waitForTimeout(5000)
 
 //await page.waitForLoadState('load');
 //await expect(frame!.locator('#dewey')).toBeVisible();
