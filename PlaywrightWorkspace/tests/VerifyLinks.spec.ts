@@ -21,5 +21,5 @@ test('Verify Home link text and URL', async ({ page }) => {
 
     // Verify page title/text if needed
     console.log(await newPage.url());
-    console.log(await newPage.url());
+    console.log(await newPage.title());
 });
