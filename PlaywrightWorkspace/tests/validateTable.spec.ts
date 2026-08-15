@@ -16,7 +16,6 @@ test.skip('Verify first name,last name, age and salary of users', async({page}) 
     console.log(`Name   : ${name}`);
     console.log(`Age    : ${age}`);
     console.log(`Salary : ${salary}`);
-    console.log();
     
     }
 }
